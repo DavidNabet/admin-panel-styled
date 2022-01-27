@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import Earnings from './Earnings';
 import Info from './Info';
+import Invoices from './Invoices';
+import JoinSlack from './JoinSlack';
 import Navbar from './Navbar';
+import ProjectRecommendation from './ProjectRecommendation';
 import Projects from "./Projects"
 function MainContent() {
   return <Container>
@@ -19,8 +22,17 @@ function MainContent() {
         </ColumnTwo1>
       </SectionOne>
       <SectionTwo>
-        <ColumnOne2></ColumnOne2>
-        <ColumnTwo2></ColumnTwo2>
+        <ColumnOne2>
+          <InvoiceContainer>
+            <TitleText>Recent Invoices</TitleText>
+            <Invoices />
+          </InvoiceContainer>
+          <JoinSlack />
+        </ColumnOne2>
+        <ColumnTwo2>
+          <TitleText>Recommended Project</TitleText>
+          <ProjectRecommendation />
+        </ColumnTwo2>
       </SectionTwo>
     </SubContainer>
 
@@ -72,5 +84,9 @@ const ColumnTwo1 = styled.div`
   width: 100%;
 `;
 const ColumnTwo2 = styled.div``;
+
+const InvoiceContainer = styled.div`
+  height: 60%;
+`;
 
 export default MainContent;
