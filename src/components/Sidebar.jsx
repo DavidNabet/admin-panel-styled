@@ -36,7 +36,7 @@ function Sidebar() {
       </Links>
       <ContactContainer>
         <span>Having troubles ?</span>
-        <a href="#">Contact us</a>
+        <a href={"/"}>Contact us</a>
       </ContactContainer>
     </LinksContainer>
   </Container>;
