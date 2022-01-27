@@ -35,9 +35,14 @@ const YourProjects = styled.div`
   border-radius: 1rem;
   box-shadow: ${cardShadow};
   transition: .4s ease-in-out;
-    &:hover{
-        box-shadow: ${hoverEffect};
-    }
+  &:hover{
+      box-shadow: ${hoverEffect};
+  }
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 75%;
+    margin-top: 1rem;
+    height: max-content;
+  }
 `;
 const Project = styled.div`
   display: flex;
@@ -56,6 +61,9 @@ const Avatar = styled.div`
 `;
 const Title = styled.h3`
   font-weight: 500;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    font-size: 1rem;
+  }
 `;
 const SubTitle = styled.h5`
   font-weight: 300;
