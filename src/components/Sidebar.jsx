@@ -9,8 +9,9 @@ import {AiOutlinePieChart} from "react-icons/ai";
 import {darkThemeColor} from "../utils"
 
 function Sidebar() {
-  return <Container>
-    <ProfileContainer>
+  return (
+  <Container>
+    <ProfileContainer> 
       <Avatar src={AvatarImage} />
       <Name>David Nabet</Name>
       <Badge content="Pro level" />
@@ -39,7 +40,8 @@ function Sidebar() {
         <a href={"/"}>Contact us</a>
       </ContactContainer>
     </LinksContainer>
-  </Container>;
+  </Container> 
+  )
 }
 
 const Container = styled.div`
